@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularCRM';
-  fruit = 'banana';
-  cars = ['Toyota', 'Renault', 'Peugeot', 'Citroen', 'BMW'];
-  cssClass = ''
-
-  clicked():void{
-    this.cssClass==='banana'?this.cssClass='':this.cssClass='banana'
-  }
+ 
 }
 
