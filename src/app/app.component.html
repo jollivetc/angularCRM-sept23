@@ -4,5 +4,8 @@
   <span>right</span>
 </mat-toolbar>
 
-
 <crm-login></crm-login>
+
+<crm-dummy label="hello" label2="Bye" (emitted)="handle($event)"></crm-dummy>
+<crm-dummy [label]="title" (emitted)="handle2($event)"
+                            (emitted2)="handle3($event)"></crm-dummy>
