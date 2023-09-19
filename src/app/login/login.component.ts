@@ -13,6 +13,10 @@ export class LoginComponent {
     password:this.builder.control('',[Validators.required, no$InPassword])
   });
 
+  loginErrors = {
+                required:'enter your login',
+                minlength:'more than 3 characters'
+              };
   constructor(private builder: FormBuilder){
   }
 

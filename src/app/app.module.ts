@@ -8,12 +8,14 @@ import { AppMaterialModule } from './app-material/app-material.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DummyComponent } from './component/dummy/dummy.component';
+import { HelpComponent } from './component/help/help.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DummyComponent
+    DummyComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
