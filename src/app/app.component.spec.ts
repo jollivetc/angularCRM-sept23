@@ -3,11 +3,15 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppMaterialModule } from './app-material/app-material.module';
+import { DummyComponent } from './component/dummy/dummy.component';
+import { HelpComponent } from './component/help/help.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule, ReactiveFormsModule],
-    declarations: [AppComponent, LoginComponent]
+    imports: [RouterTestingModule, ReactiveFormsModule, AppMaterialModule, NoopAnimationsModule],
+    declarations: [AppComponent, LoginComponent, DummyComponent, HelpComponent]
   }));
 
   it('should create the app', () => {
