@@ -1,11 +1,18 @@
 <mat-toolbar color="primary">
   <span>{{ title }} app is running!</span>
   <span class="fill-space"></span>
-  <span>right</span>
+  <span>
+    <a mat-icon-button matTooltip="Home page"
+        routerLink="/home" routerLinkActive="is-active">
+      <mat-icon>home</mat-icon>
+    </a>
+  </span>
+  <span>
+    <a mat-icon-button matTooltip="login page"
+        routerLink="/login" [routerLinkActive]="logoutActive">
+      <mat-icon>logout</mat-icon>
+    </a>
+  </span>
 </mat-toolbar>
 
-<crm-login></crm-login>
-
-<crm-dummy label="hello" label2="Bye" (emitted)="handle($event)"></crm-dummy>
-<crm-dummy [label]="title" (emitted)="handle2($event)"
-                            (emitted2)="handle3($event)"></crm-dummy>
+<router-outlet></router-outlet>
