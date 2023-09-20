@@ -26,10 +26,12 @@ export class LoginComponent {
   }
 
   login():void{
-    const user:User = this.authentService.authentUser(this.loginForm.value.login!, this.loginForm.value.password!);
-    if(user){
-      this.router.navigateByUrl('/home');
-    }
+    this.authentService.authentUser(this.loginForm.value.login!, this.loginForm.value.password!)
+          .subscribe({
+            next:(user:User)=>{ this.router.navigateByUrl('/home'); },
+            error:(error:Error)=>{ alert(error) },
+            complete:()=>{}
+          })
   }
 }
 
