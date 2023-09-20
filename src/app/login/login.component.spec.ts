@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {HttpClientTestingModule} from '@angular/common/http/testing'
 import { LoginComponent } from './login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -14,7 +14,7 @@ describe('LoginComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [LoginComponent, HelpComponent],
-      imports:[ReactiveFormsModule,  AppMaterialModule, NoopAnimationsModule]
+      imports:[ReactiveFormsModule,  AppMaterialModule, NoopAnimationsModule, HttpClientTestingModule]
     });
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
