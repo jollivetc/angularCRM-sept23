@@ -5,9 +5,12 @@ import {MatButtonModule} from '@angular/material/button'
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatTooltipModule} from '@angular/material/tooltip'
 import {MatIconModule} from '@angular/material/icon'
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select'
 
 const importsExports = [MatInputModule, MatFormFieldModule, MatButtonModule,
-          MatToolbarModule, MatTooltipModule, MatIconModule]
+          MatToolbarModule, MatTooltipModule, MatIconModule, MatOptionModule,
+          MatSelectModule]
 
 @NgModule({
   imports: importsExports,
